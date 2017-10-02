@@ -1,12 +1,15 @@
 # iMessage App Demo
 
 1. MSConversation
+
 It represents the currently open converation. You can use this class in order to manipulate the conversation transcript, for example by inserting messages or getting the currently selected message.
 
 2. MSMessage
+
 It represents a single message, whether created by you to insert into the conversation or already existing in the conversation
 
 3. MSMessageTemplateLayout
+
 It create a message bubble for you to display your custom message in. It is important to note that the space in the top left of this layout will be filled by your iMessage app's icon.
 
 ```Swift
@@ -30,8 +33,9 @@ It create a message bubble for you to display your custom message in. It is impo
 ```
 
 ## Screenshot
+
 <p align="center">
-  <img src="screenshot1.png" width=414 height=736></img>
+  <img src="screenshot1.png" width=375 height=667></img>
 </p>
 
 
@@ -56,8 +60,9 @@ func createStickerBrowser() {
 ```
 
 ## Screenshot
+
 <p align="center">
-  <img src="screenshot2.png" width=414 height=736></img>
+  <img src="screenshot2.png" width=375 height=667></img>
 </p>
 
 Happy coding :+1:  :sparkles:
