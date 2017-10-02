@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="iMsgAppDemo_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xzz-di-iqz">
+                                <rect key="frame" x="113" y="250" width="94" height="29"/>
+                                <connections>
+                                    <action selector="valueDidChanged:" destination="ObA-dk-sSI" eventType="valueChanged" id="lGM-vf-oRE"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSq-Bl-WDY">
+                                <rect key="frame" x="104" y="478" width="112" height="30"/>
+                                <state key="normal" title="Create Message"/>
+                                <connections>
+                                    <action selector="createMessage:" destination="ObA-dk-sSI" eventType="touchUpInside" id="hWO-ad-5qR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-l3-uRP">
+                                <rect key="frame" x="126.5" y="163" width="67" height="67"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tUZ-l3-uRP" secondAttribute="height" id="7i9-8G-sIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xzz-di-iqz" firstAttribute="top" secondItem="tUZ-l3-uRP" secondAttribute="bottom" constant="20" id="4MQ-aT-Ebt"/>
+                            <constraint firstItem="Xzz-di-iqz" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="96l-fr-igy"/>
+                            <constraint firstItem="tUZ-l3-uRP" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="Cjp-o1-JVI"/>
+                            <constraint firstItem="Xzz-di-iqz" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="MsQ-7o-JHn"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="bottom" secondItem="XSq-Bl-WDY" secondAttribute="bottom" constant="20" id="Vt2-p7-oMy"/>
+                            <constraint firstItem="XSq-Bl-WDY" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="jq8-sU-4yf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="stepper" destination="Xzz-di-iqz" id="Bgu-VY-g2D"/>
+                        <outlet property="valueLabel" destination="tUZ-l3-uRP" id="2MS-Md-wtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.8" y="106.14692653673164"/>
+        </scene>
+    </scenes>
+</document>
