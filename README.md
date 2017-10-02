@@ -29,13 +29,17 @@ It create a message bubble for you to display your custom message in. It is impo
 }
 ```
 
-![Screenshot](screenshot1.png)
+## Screenshot
+<p align="center">
+  <img src="screenshot1.png" width=414 height=736></img>
+</p>
+
 
 # Sticker Pack App
 
 Create sticker browser
 
-```Swfit
+```Swift
 func createStickerBrowser() {
 	let controller = MSStickerBrowserViewController(stickerSize: MSStickerSize.large)
 	addChildViewController(controller)
@@ -51,6 +55,9 @@ func createStickerBrowser() {
 }
 ```
 
-![Screenshot](screenshot2.png)
+## Screenshot
+<p align="center">
+  <img src="screenshot2.png" width=414 height=736></img>
+</p>
 
 Happy coding :+1:  :sparkles:
