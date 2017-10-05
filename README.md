@@ -62,7 +62,7 @@ func createStickerBrowser() {
 ## Screenshot
 
 <p align="center">
-  <img src="screenshot2.png" width=375 height=667></img>
+  <img src="screenshot3.png" width=375 height=667></img>
 </p>
 
 Happy coding :+1:  :sparkles:
